@@ -25,7 +25,7 @@ use std::str;
 /// # std::io::Result::Ok(())
 /// ```
 pub struct JsonReader<R: BufRead> {
-    reader: R,
+    pub reader: R,
     state_stack: Vec<JsonState>,
     element_read: bool,
     max_stack_size: Option<usize>,
